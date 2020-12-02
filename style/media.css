@@ -1,0 +1,520 @@
+@media  (orientatin: landscape)  {
+    .background.energy::before {
+        background-position: 0 2rem;
+    }
+
+}
+
+@media screen and  (min-width: 530px)  {
+    .burger {
+        padding-right: 2%;
+    }
+
+    .background.energy::before {
+        background-position: 0 0rem;
+    }
+
+    h2 {
+        margin: 5% 0 5% 0;
+    }
+    
+ 
+
+    .content {
+        font-size: 1.1rem;
+        padding: 5% 5% 10% 5%;
+    }
+
+    .slider {
+        height: 80vh;
+}
+
+    .sliderImg {
+    
+    height:80vh;
+   
+}
+
+.textImg {
+    height: 20%;
+}
+
+.containerOpinion {
+    
+    margin: 10% 20% 10% 20%;
+}
+
+.contactData {
+    padding: 0 20% 0 20%;
+}
+
+form {
+    margin: 0 20% 0 20%;
+}
+
+aside {
+    margin: 0 10% 0 10%;
+}
+}
+
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 20px;
+    }
+    .stage {
+        margin: 5vh 5% 5vh 5%;
+       
+    }
+   
+
+    .projects {
+        margin: 5vh 0 5vh 0;
+    }
+    .arrow{
+        font-size: 2rem;
+    }
+
+    .slider {
+        height: 50vh;
+}
+
+    .sliderImg {
+    
+    height:50vh;
+   
+}
+
+    .textImg {
+            height: 15%;
+        }  
+
+}
+
+
+
+@media screen and (min-width: 1024px) {
+html {
+     width: 100vh;
+        font-size: 20px;
+    }
+
+.logo {
+    padding: 2%;
+}
+.burger {
+    padding-right: 2%;
+}
+
+
+.menu {
+    top: 100px;
+}
+
+.menu a{
+    font-size: 1.1rem;
+}
+
+.actualPosition:after {
+    width: 25%;
+}
+
+/* intro */
+
+.intro h1 span::after {
+    content:"";
+  
+}
+
+.btn {
+    width: 35%;
+}
+
+.positionL .btn, .positionR .btn {
+    width: 70%;
+}
+
+/* UP ARROW */
+.upArrow {
+    width: 80px;
+    height: 80px;
+}
+
+.upArrow > i {
+    font-size: 3rem;
+}
+
+/* stage */
+.box {
+    padding: 100px 0 100px 0;
+    justify-items: center;
+}
+.icons {
+    width: 180px;
+    height: 180px;
+}
+
+.showContent {
+    display: inline;
+}
+
+.slider {
+    height: 70vh;
+}
+
+.sliderImg {
+
+height:70vh;
+
+}
+
+.textImg {
+height: 10%;
+}
+
+.stage {
+    display: grid;
+    grid-template-rows: 
+    "";
+}
+}
+
+
+
+
+@media screen and (min-width: 1300px)  { 
+    /* navbar */
+    
+.nav {
+    height: 90px;
+}
+
+.topnav {
+   
+    grid-template-areas: 
+       "logo .   menubar";
+
+       grid-template-columns: auto minmax(1fr 1000px);
+
+}
+
+.logo {
+    height: 80px;
+    margin: 0;
+}
+
+.burger {
+    display: none;
+}
+
+.menu {
+    grid-area: menubar;
+    max-width: 1000px;
+    /* overflow: hidden; */
+    
+    top: 0px;
+ 
+   
+    display: flex;
+    background-color:inherit;
+    
+    opacity: 1;
+    justify-content: flex-end;
+    flex-flow: row wrap;
+    height: auto;
+    font-family: 'Duru Sans', sans-serif;
+
+}
+
+
+.menu a {
+    
+    text-align: center;
+  
+    font-size: 0.7rem;
+   
+    height: 100%;
+    
+  }
+
+  .submenu {
+    display: none;
+}
+
+.submenu a{
+    padding: 0 30px;
+    font-size: 0.6rem;
+}
+.arrowMenu {
+    font-size: 0.7rem;
+}
+
+.actualPosition:after {
+    width: 90%;
+}
+/* header */
+
+.header{
+    background: url(../img/header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+/* intro */
+.intro {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* main */
+
+
+.main {
+
+    display: grid;
+    grid-template-areas: "header header header"
+    "arch land energy";
+    gap: 10px;
+}
+
+.background {
+    height: 80vh;
+}
+
+.main h2 {
+    grid-area: header;
+}
+
+.background.arch{
+    grid-area: arch;
+}
+
+.background.landscape{
+    grid-area: land;
+}
+.background.energy{
+    grid-area: energy;
+}
+
+h3 {
+    font-size: 1.6rem;
+    height: 90px;
+    text-align: center;
+}
+
+.positionR, .positionL {
+    position: absolute;
+    top: 8%;
+    right: 50%;
+    transform: translate(50%, 0);
+   
+}
+
+
+
+/* stage */
+
+
+
+.stage {
+    max-width: 1400px;
+    margin: 0 auto;
+    
+   
+}
+
+h1 {
+
+    font-size: 1.6rem;
+   
+
+}
+
+.box {
+
+   display: grid;
+   grid-gap: 10px;
+   grid-template-columns:[first] 250px [line2] 30px [line3] 1fr [end] ;
+   grid-template-rows: [row-start] 150px [row-mid]1fr [row-end];
+   grid-template-areas: 
+   ". nbr boxTitle"
+   "icons content content";
+    margin: 0;
+    padding: 0;
+    justify-items: center;
+    align-items: center;
+   
+
+}
+
+
+
+.icons {
+   
+    grid-area: icons;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    /* grid-column: first / line2  ;
+	grid-row: row-start/ row-end; */
+	
+}
+.icons::after {
+    background-color: red;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.nbr {
+    grid-area: nbr;
+    /* grid-column: col 2 / span;
+	grid-row: row ; */
+}
+
+.boxTitle {
+    grid-area: boxTitle;
+       /* grid-column: col 3 / span;
+	grid-row: row ; */
+}
+
+
+.arrow {
+display: none;
+} 
+
+.content {
+    font-size: 1.0rem;
+    grid-area: content;
+    display: block;
+    margin: 0;
+    padding: 0;
+    /* grid-column: col 2 / span 2;
+	grid-row: row 2 ; */
+}
+
+
+/* projects */
+
+.slider {
+    height: 100vh;
+}
+
+.sliderImg {
+    height:100vh;  
+}
+.textImg {
+    top: 20%;
+    width: 25%;
+    height: 10%;
+}
+
+.dots {
+    width: 10%;
+}
+
+
+/* studio  */
+.bckgImg {
+    height: 90vh;
+    width: 100%;
+}
+
+
+/* opinions */
+.containerOpinion {
+    margin: 5% 30%;
+}
+
+.containerOpinion article {
+    font-size: 1.1rem;
+    margin: 15% 10% 15% 10%;
+
+    
+}
+
+.containerOpinion p {
+    font-size: 1.3rem;
+    font-weight: bolder;
+    position: absolute;
+    right:5%;
+    bottom: 2%;
+    
+}
+
+/* location */
+.location {
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+   'headerL headerL'
+   'map contactData';
+   grid-template-columns: 0.7fr 0.3fr;
+   
+}
+
+.location h2 {
+    grid-area: headerL;
+    margin: 2% 0;
+}
+
+.map {
+    grid-area: map;
+    margin: 10%;
+}
+
+.contactData {
+    grid-area: contactData;
+    font-size: 1.2rem;
+    grid-template-columns: 3rem 1fr;
+    grid-template-rows: repeat(3, 3rem);
+    align-self: center;
+    justify-self: start;
+    padding: 0;
+}
+
+.icon-location {
+  
+    font-size: 2rem;
+}
+
+.icon-mail {
+
+    font-size: 1.8rem;
+}
+
+
+.icon-phone-1 {
+
+    font-size: 1.8rem;
+}
+
+.address, .mail, .phone {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+/* contact */
+
+
+.contact {
+   
+    font-size: 1.0em;
+}
+form {
+    margin: 0 35% 0 35%;
+}
+}
+/* cursor:pointer dla duzych formatów
+
+auto prefix */
+
+
+

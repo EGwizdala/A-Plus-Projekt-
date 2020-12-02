@@ -1,0 +1,16 @@
+@keyframes arrowDown {
+    0% {top: 0;}
+   50% {top: 0.5rem;}
+   100% {top: 0;}
+}
+
+@keyframes fade {
+from {opacity: .1} 
+  to {opacity: 1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+

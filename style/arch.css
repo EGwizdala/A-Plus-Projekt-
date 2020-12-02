@@ -1,0 +1,255 @@
+
+
+
+.arch {
+    background: url("../img/bckg/arch.jpg");
+    grid-area: header;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    font-family: 'Duru Sans', sans-serif;
+    bottom: 80px;
+    z-index: 1;
+    text-shadow:2px 2px 5px #FFFFFF;
+}
+
+.landscape {
+    background: url("../img/bckg/landscape.jpg");
+    grid-area: header;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    font-family: 'Duru Sans', sans-serif;
+    bottom: 80px;
+    z-index: 1;
+    text-shadow:2px 2px 5px #FFFFFF;
+}
+
+.energy {
+    background: url("../img/bckg/energy.jpg");
+    grid-area: header;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    font-family: 'Duru Sans', sans-serif;
+    bottom: 80px;
+    z-index: 1;
+    text-shadow:2px 2px 5px #FFFFFF;
+}
+
+.title {
+    
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    font-size: 1.1rem;
+}
+
+.title h1 {
+    letter-spacing: 0.1rem;
+}
+
+.title h2 {
+    font-size: 0.9rem;
+    text-justify: inter-character;
+    text-align: right;
+    letter-spacing: 0;
+    margin: 0;
+}
+
+.title h2 span::after {
+    content:"\A";
+    white-space: pre;
+}
+.arrowH {
+    position: absolute;
+    bottom: -30%;
+    right: 50%;
+    transform: translate(50%, 50%); 
+}
+
+article >h2 {
+    font-size: 1.4rem;
+    font-weight: bolder;
+    text-align: justify;
+    text-justify: inter-word;
+    letter-spacing: -0.05rem;
+}
+
+article, li {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    text-align: left;
+    text-justify: inter-character;
+    letter-spacing: -0.05rem;
+    margin: 2rem 0 2rem 0;
+}
+
+ol p {
+    font-size: 1.0rem;
+    font-weight: normal;
+    text-align: justify;
+    text-justify: inter-character;
+    margin-top: 1rem;
+}
+
+small {
+    background-color: #B8C0C2;
+    width: 100%;
+    height: 10vh;
+    padding: 5%;
+    letter-spacing: .1em;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(min-width: 1024px) {
+    html {
+       
+            font-size: 20px;
+        }
+    
+    .logo {
+        padding: 2%;
+    }
+    .burger {
+        padding-right: 2%;
+    }
+    
+    
+    .menu {
+        top: 100px;
+    }
+    
+    .menu a{
+        font-size: 1.1rem;
+    }
+    
+    .actualPosition:after {
+        width: 25%;
+    }
+    
+    /* intro */
+
+   
+    
+    .title h2 span::after {
+        content:"";
+      
+    }
+    
+    .btn {
+        width: 35%;
+    }
+    
+    .positionL .btn, .positionR .btn {
+        width: 70%;
+    }
+    
+    /* UP ARROW */
+    .upArrow {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .upArrow > i {
+        font-size: 3rem;
+    }
+    
+    /* stage */
+    .box {
+        padding: 100px 0 100px 0;
+        justify-items: center;
+    }
+    .icons {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .showContent {
+        display: inline;
+    }
+    
+    .slider {
+        height: 70vh;
+    }
+    
+    .sliderImg {
+    
+    height:70vh;
+    
+    }
+    
+    .textImg {
+    height: 10%;
+    }
+    
+    .stage {
+        display: grid;
+        grid-template-rows: 
+        "";
+    }
+    }
+    
+    
+    
+    
+    @media(min-width: 1600px)  {
+        html {
+       max-width: 1000px;
+          
+        }
+    /* stage */
+    
+    .stage {
+        display: grid;
+        grid-template-areas: 
+        "h2 h2"
+        "box1 box2"
+        "box3 box4";
+    }
+    
+    h1 {
+        grid-area: h2;
+    }
+    
+    .box1 {
+       grid-area: box1;
+    }
+    .box2 {
+        grid-area: box2;
+     }
+    .box3 {
+        grid-area: box3;
+    }
+    .box4 {
+        grid-area: box4;
+    }
+    
+    
+        .slider {
+            height: 70vh;
+        }
+        
+        .sliderImg {
+        
+        height:70vh;
+        
+        }
+        
+        .textImg {
+        height: 10%;
+        }
+    }
+    
