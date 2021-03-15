@@ -16,7 +16,7 @@ A website is my first attempt to write bigger sites. It is not perfect and needs
 Gallery contains only my original projects.
 
 ## Layout
-![AplusProjekt](./imgAplusProjekt.png)
+![AplusProjekt](/imgAplusProjekt.png)
 
 ## Technologies
 * HTML5
