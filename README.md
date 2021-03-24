@@ -20,7 +20,7 @@ Gallery contains only my original projects.
 
 ## Technologies
 * HTML5
-* CSS6 (css-grid, media query, keyframes in use)
+* CSS3 (css-grid, media query, keyframes in use)
 * JAVASCRIPT
 * Written in Visual Studio Code
 
